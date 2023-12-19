@@ -245,6 +245,11 @@ a{
   height: 70px;
   }
 }
+@media screen and (max-width:820px){
+  #thongtin b{
+    font-size: 35px;
+  }
+}
 
 
 
