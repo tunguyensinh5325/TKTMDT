@@ -195,23 +195,24 @@ p b{
   }
   .text p{
     font-size:12px;
-    font-family:futura-REGULAR,sans-serif;
+    font-family:futura-REGULAR,sans-serif, Times;
   }
   .text h1{
-    font-family:futura-REGULAR,sans-serif;
+    font-family:futura-REGULAR,sans-serif, Times;
     font-size: 25px;
   }
 }
 @media screen and (max-width:700px){
   .box1{
     flex-direction: column;
+    align-items: center;
   }
   .box1 img{
     height:80vw;
     width:100%;
   }
   #text2, .text{
-    width:100%;
+    width:90%;
   }
   #pic2{
     order:-1;

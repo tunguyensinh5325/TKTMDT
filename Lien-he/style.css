@@ -33,7 +33,6 @@ body{
     color:black;
     font-size: 23px;
     margin-top:16px;
-    
   }
   
   .icon-menu {
@@ -133,8 +132,9 @@ body{
       width:150px;
     }
     input{
-      width:100px;
+      width:70%;
     }
+    
   
   }
 
@@ -165,6 +165,16 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+@media screen and (max-width: 700px){
+  section {
+    max-width: 90%;
+    margin: 1em 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+}
 
 label {
     display: block;
@@ -173,7 +183,7 @@ label {
 
 section input,
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 0.5em;
 
 }
