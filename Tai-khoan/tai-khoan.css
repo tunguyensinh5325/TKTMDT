@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    background-image: url(./nen1.jpg);
+    background-size:100% 100%;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: flex-end;
+}
+.bigbox{
+    width:500px;
+    height:400px;
+    border-radius:10px;
+    align-self: center;
+    background-color: white;
+    margin:0 3.5vw 0 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 10px 15px 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+form{
+    min-height:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width:400px;
+    height:50px;
+    border-radius: 5px;
+    border: rgb(211, 239, 232) solid;
+    margin:30px 0 0 0;
+    font-size:25px;
+    padding: 0 15px;
+}
+button{
+    width:200px;
+    height:50px;
+    background-color:rgb(248,239,234);
+    font-size:25px;
+    margin:30px 0 0 0;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:rgb(202, 195, 191);
+}
+b{
+    font-size:50px;
+}
+@media screen and (max-width: 550px){
+    .bigbox{
+        width:450px;
+        height:350px;
+        margin:0;
+    }
+    body{
+        justify-content: center;
+    }
+    b{
+        font-size:35px;
+    }
+    input{
+        width:370px;
+        height:40px;
+        font-size:20px;
+    }
+}
+@media screen and (max-width: 370px){
+    .bigbox{
+        width:90vw;
+        height:80vw;
+        margin:0;
+    }
+    
+    body{
+        justify-content: center;
+    }
+    b{
+        margin-top:5px;
+        font-size:25px;
+    }
+    
+    input{
+        width:80vw;
+        height:10vw;
+        font-size:15px;
+        padding: 0 7px;
+        margin:15px 0 0 0;
+    }
+    button{
+        width:60vw;
+        height:15vw;
+        background-color:rgb(248,239,234);
+        font-size:20px;
+        margin:15px 0 0 0;
+        border-radius: 5px;
+    }
+    
+}
+@media screen and (max-width: 280px){
+    .bigbox{
+        min-width:90vw;
+        min-height:80vw;
+        margin:0;
+    }
+    
+    body{
+        justify-content: center;
+    }
+    b{
+        margin-top:5px;
+        font-size:25px;
+    }
+    
+    input{
+        width:80vw;
+        height:20vw;
+        font-size:15px;
+        padding: 0 7px;
+        margin:15px 0 0 0;
+    }
+    button{
+        width:60vw;
+        height:15vw;
+        background-color:rgb(248,239,234);
+        font-size:15px;
+        margin:15px 0 0 0;
+        border-radius: 5px;
+    }
+    
+}

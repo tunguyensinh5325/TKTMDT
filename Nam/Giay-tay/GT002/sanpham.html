@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ</title>
+  <link rel="stylesheet" href="./syte.css">
+</head>
+<body>
+
+  <script src="./syte.js"></script>
+  <div id="menu">
+
+    <!--LOGO-->
+    <a href="../../../index.html"><img src="./logo.png" class="logo"></a>
+    <!--Icon menu chỉ xuất hiện khi thu nhỏ màn hình-->
+    <div class="icon-menu" onclick="toggleMenu()">
+    </div>
+
+    <!--4 mục menu menu Nam, Nữ,...-->
+    <div class="muc-menu" id="menuContent">
+      <!--Mục Nam-->
+      <div>
+        
+        <a href="../../../Nam/nam.html" class="muc"><b>NAM</b></a>
+        <div class="dropdown-content">
+          <a href="../../../Nam/Sandal/sandal.html">Sandal</a>
+          <a href="../../../Nam/Giay-the-thao/giay-thao-thao.html">Giày thể thao</a>
+          <a href="../../../Nam/Giay-tay/giay-tay.html">Giày tây</a>
+          <a href="../../../Nam/Dep/dep.html">Dép</a>
+        </div>
+      </div>
+
+      <!--Mục Nữ-->
+      <div>
+        <a href="../../../Nu/nu.html" class="muc"><b>NỮ</b></a>
+        <div class="dropdown-content">
+          <a href="../../../Nu/Sandal/sandal.html">Sandal</a>
+          <a href="../../../Nu/Giay-cao-got/giay-cao-got.html">Giày cao gót</a>
+          <a href="../../../Nu/Giay-di-bo/giay-di-bo.html">Giày đi bộ</a>
+        </div>
+      </div>
+
+      <!--Mục Bé Trai-->
+      <div>
+        <a href="../../../Be-trai/be-trai.html" class="muc"><b>BÉ TRAI</b></a>
+        <div class="dropdown-content">
+          <a href="../../../Be-trai/Sandal/sandal.html">Sandal</a>
+          <a href="../../../Be-trai/Giay-the-thao/giay-the-thao.html">Giày thể thao</a>
+          <a href="../../../Be-trai/Dep/dep.html">Dép</a>
+        </div>
+      </div>
+
+      <!--Mục Bé Gái-->
+      <div>
+        <a href="../../../Be-gai/be-gai.html" class="muc"><B>BÉ GÁI</B></a>
+        <div class="dropdown-content">
+          <a href="../../../Be-gai/Sandal/sandal.html">Sandal</a>
+          <a href="../../../Be-gai/Giay-bup-be/giay-bup-be.html">Giày búp bê</a>
+          <a href="../../../Be-gai/Dep-be-gai/dep-be-gai.html">Dép bé gái</a>
+        </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <!--Khung chứa thanh tìm kiếm và tài khoản-->
+    <div class="search">
+      <img src="./search.png" style="width:20px; height:20px">
+      <form method="post"><input type="text" placeholder="Tìm kiếm" required></form>
+      <a href="../../../Tai-khoan/tai-khoan.html" title="Tài khoản"><img src="./icon-account.png" class="icon"></a>
+    </div>
+  </div>
+  <div class="line">
+    <a href="../../../index.html" style="margin-left:20px">Trang chủ </a>/ <a href="../../nam.html">Nam</a>/ <a href="../giay-tay.html">Giày Tây</a>/Giày Tây Nam GT002
+  </div>
+  <!--Phần tụi m code-->
+  <div class="firstbox">
+    <img src="./tay22.webp" id="largeImage">
+
+    <div id="thongtin">
+      <b>Giày Tây Nam GT002</b>
+      <p>500.000₫</p>
+      Tình trạng: Còn hàng<br>
+      <div id="boxsize">
+        <a>Size: </a>
+        <div class="kt" onclick="selectBox(this)">41</div>
+        <div class="kt" onclick="selectBox(this)">42</div>
+        <div class="kt" onclick="selectBox(this)">43</div>
+      </div>
+      <div class="anh">
+        <img src="./tay22.webp" class="thumbnail" onclick="showImage(this, 'tay22.webp')"  >
+        <img src="./tây.webp" class="thumbnail" onclick="showImage(this, 'tây.webp')" > 
+        
+      </div>
+      <button class="mua">Mua ngay</button>
+    </div>
+  </div>
+
+	<div class="row">
+				<div class="col-12 descripiton-mg">
+					<div class="head-title-desc"><h3 style="line-height: 1.2; font-size: 25px;">Mô tả sản phẩm</h3></div>
+					<div class="product-description " >
+																											
+            <h4>👟 Phần thân giày được làm từ da thật hoặc da tổng hợp cao cấp, mềm mại và thoáng khí.&nbsp;</h4>
+            <h4>👟 Phần lót giày được làm từ chất liệu êm ái, giúp mang lại sự thoải mái cho người sử dụng.&nbsp;</h4>
+            <h4>👟 Đế giày được làm từ cao su hoặc nhựa tổng hợp, có độ đàn hồi và chống trơn trượt tốt.
+              Form giày chuẩn, ôm gọn bàn chân, mang đến sự vừa vặn và thoải mái khi di chuyển.
+              Giày tây được thiết kế với nhiều kiểu dáng và màu sắc khác nhau, phù hợp với nhiều phong cách thời trang và hoàn cảnh sử dụng.&nbsp;</h4>
+					</div> 
+          <section>
+					
+				</div>
+	</div>
+  <div class="container">
+		<div class="45" style="font-size: 25px;">
+			<h3 style="line-height: 1.2;">CÁC SẢN PHẨM NỔI BẬT</h3>
+
+		</div>
+	</div>
+
+  <div class="bigbox" >
+    
+    <div class="smallbox"></a>
+      <img src="./ttt1.webp">
+      <b><a href="../../../Nam/Giay-the-thao/GTT003/sanpham.html">Giày thể thao Nam</a></b>
+      <a>3 size</a>
+      <p>2 màu sắc</p>
+      <p style="color:red"> 1.500.000 ₫ </p>  
+    </div>
+  
+
+  
+    <div class="smallbox">
+      <img src="./ttt2.webp">
+      <b><a href="../../../Nam/Giay-the-thao/GTT003/sanpham.html">Giày thể thao Nam</a></b>
+      <a> 3 size</a>
+      <p> 2 màu sắc</p>
+      <p style="color:red"> 1.500.000 ₫ </p>  
+  </div>
+
+  <div class="smallbox" id="thoat">
+    <img src="./tt2.webp">
+    <b><a href="../../../Nam/Giay-the-thao/GTT002/sanpham.html">Giày thể thao Nam</a></b>
+    <a> 3 size</a>
+    <p> 2 màu sắc</p>
+    <p style="color:red"> 800.000 ₫ </p>  
+  </div>
+</div>
+
+  
+  <!--Phần cuối-->
+  <div class="foot">
+    <div class="infor">
+      <img src="./logo.png">
+      <b>CÔNG TY TNHH GIÀY DÉP SHOES WORLD</b>
+      <p><b>Địa chỉ:</b> Tòa I-102, 280 Đ. An Dương Vương, Phường 4, Quận 5, Thành phố Hồ Chí Minh</p>
+      <p><b>Điện thoại:</b> (026) 98 785 897</p>
+      <p><b>Email liên hệ hỗ trợ khách hàng:</b> thegioigiaydep@gmail.com</p>
+      <p><b>Hotline:</b> 0989020064</p>
+      <p><b>Thời gian tư vấn:</b> 8h – 21h30 các ngày trong tuần (trừ ngày Lễ, Tết)</p>
+    </div>
+
+    <div class="about">
+      <b>VỀ SHOES WORLD</b>
+      <a href="../../../Gioi-thieu/gioi-thieu.html"><p>GIỚI THIỆU</p></a>
+      <a href="../../../Lien-he/lien-he.html"><p>LIÊN HỆ</p></a>
+    </div>
+  </div>
+<script>
+  var buyButtons = document.querySelectorAll('.mua');
+
+buyButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        alert('Đã đặt hàng thành công');
+    });
+});
+</script>
+
+</body>
+</html>
