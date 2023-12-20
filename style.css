@@ -123,6 +123,7 @@ input{
 .icon:hover{
   background-color:rgba(0,0,0,0.2);
 }
+
 @media screen and (max-width: 380px) {
   
   .logo{
@@ -134,6 +135,9 @@ input{
   }
   input{
     width:100px;
+  }
+  .search{
+    margin:0;
   }
 
 }
@@ -458,5 +462,43 @@ a{
   }
   .about{
     margin:70px 10px 0 10px  ;
+  }
+}
+
+
+
+@media screen and (max-width: 480px){
+  .logo{
+    width:80px;
+    height:50px;
+  }
+  .icon-menu {
+    min-width:50px;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  
+  
+  
+  .search{
+    margin:0;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  #menu, .anh, .foot{
+    width:350px;
+  }
+  #khungnoibat, #khungnoibat2{
+    width:320px;
+  }
+  .dichchuyen{
+    width:300px;
+  }
+  .dichchuyen a img{
+    height:31px;
   }
 }
