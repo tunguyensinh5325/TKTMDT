@@ -242,6 +242,9 @@ input{
 .dichchuyen a img:hover{
   transform:scale(1.1)
 }
+#nam,#nu,#betrai,#begai{
+  transition:0.2s eas;
+}
 
 
 /*Phần sản phẩm nổi bật*/
