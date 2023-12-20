@@ -400,7 +400,112 @@ input{
 
 
 
+/*Phần định dạng thông thông các loại giày*/
+.bigbox{
+  margin:0px 0 20px 0;
+  display:flex;
+  justify-content:space-around;
+  width:95%;
+  flex-wrap:wrap;
+}
+.smallbox{
+  
+  min-height:30vw;
+  width:24%;
+  margin-top:7px;
+  border:solid;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  transition: 0.2s ease-out;
 
+}
+.smallbox:hover{
+  transform:scale(1.05);
+}
+.smallbox img{
+  width:80%;
+   height:auto;
+    margin-top:5px
+}
+
+.smallbox p{
+  margin: 0;
+  font-size: 25px;
+}
+.smallbox b{
+  font-size: 25px;
+  text-align: center;
+  
+}
+.ten-muc{
+  width:90%;
+  padding-top:10vw;
+  font-size:50px;
+}
+hr{
+  width:90%;
+  margin-top:0;
+}
+.xem-them{
+  font-size: 20px;
+  margin:0;
+  transition:0.15s ease-out
+}
+.xem-them:hover{
+  transform:scale(1.1);
+  text-shadow:  0 0 10px black;
+}
+@media screen and (max-width:600px) {
+  .bigbox{
+      flex-wrap:wrap;
+      justify-content:space-around;
+  }
+  .smallbox{
+      min-height:200px;
+      width:150px;
+  }
+  .smallbox p{
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .smallbox b{
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  #thoat{
+    display:none;
+  }
+}
+@media screen and (max-width:400px){
+  .bigbox{
+      width:100%;
+  }
+  .smallbox{
+      min-height:180px;
+      width:40%;
+      margin-top:10px;
+  }
+  .smallbox p{
+    margin: 0;
+    font-size: 13px;
+  }
+  .smallbox b{
+    font-size: 15px;
+    text-align: center;
+  }
+  .line{
+    display:none;
+  }
+  .container h3{
+    font-size:25px;
+  }
+}
+
+/*Phần định dạng thông tin phía dưới cùng*/
 .foot{
   width:100%;
   display:flex;
