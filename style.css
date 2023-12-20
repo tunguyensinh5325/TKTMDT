@@ -141,7 +141,7 @@ input{
 
 
 
-
+/*Phần quảng cáo*/
 .anh{
   width:100%;
   height:300px;
@@ -163,12 +163,12 @@ input{
 #image-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width:500px;
+  min-width:100%;
   height:100%;
 }
 
 .image-slide {
-  width:7456874px;
+  min-width:100%;
   height:100%;
   box-sizing: border-box;
 }
@@ -217,7 +217,7 @@ input{
 
 
 
-
+/*Phần dịch chuyển sang từng mục*/
 .dichchuyen{
   width:90%;
   display:flex;
@@ -235,9 +235,163 @@ input{
   transition: 0.15s ease-out;
 }
 .dichchuyen a img:hover{
-  transform:scale(1.1);
+  transform:scale(1.1)
 }
 
+
+/*Phần sản phẩm nổi bật*/
+#khungnoibat {
+  text-align: center;
+  position:relative;
+  overflow: hidden;
+  width:90vw;
+  height:40vw;
+  
+}
+
+#khungchuanoibat {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  min-width:100%;
+  height:100%;
+}
+
+.noibat {
+  min-width:22.9%;
+  height:30vw;
+  border:solid 1px;
+  border-radius:5px;
+  margin:0 1%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+
+
+.noibat:hover{
+  transform:scale(1.05);
+}
+.noibat img{
+  width:80%;
+   height:auto;
+    margin-top:5px
+}
+
+.noibat p{
+  margin: 0;
+  font-size: 25px;
+}
+.noibat b{
+  font-size: 25px;
+  text-align: center;
+  
+}
+
+@media screen and (max-width:1000px) {
+  #khungnoibat {
+    
+    height:50vw;
+    
+  }
+  .noibat{
+    min-height: 35vw;
+    font-size: 18px;
+  }
+  .noibat p{
+    margin: 0;
+    font-size: 23px;
+    text-align: center;
+  }
+  .noibat b{
+    font-size: 25px;
+    text-align: center;
+    
+  }
+}
+@media screen and (max-width:804px) {
+  #khungnoibat {
+    
+    height:50vw;
+    
+  }
+  .noibat{
+    min-height: 35vw;
+    font-size: 15px;
+  }
+  .noibat p{
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .noibat b{
+    font-size: 18px;
+    text-align: center;
+    
+  }
+}
+/*Phần sản phẩm nổi bật khi độ rộng dưới 600px*/
+#khungnoibat2{
+  display:none;
+}
+@media screen and (max-width:600px){
+  #khungnoibat{
+      display:none;
+  }
+
+#khungnoibat2{
+  display:flex;
+  align-items: center;
+  text-align: center;
+  position:relative;
+  overflow: hidden;
+  width:95%;
+  min-height:55vh;
+}
+.noibat2 {
+  min-width:45%;
+  min-height:40vh;
+  border:solid 1.5px;
+  border-radius:5px;
+  margin:0 2%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.noibat2:hover{
+  transform:scale(1.05);
+}
+.noibat2 img{
+  width:80%;
+   height:auto;
+    margin-top:5px
+}
+
+.noibat2 p{
+  margin: 0;
+  font-size: 20px;
+}
+.noibat2 b{
+  font-size: 21px;
+  text-align: center;
+  
+}
+#khungchuanoibat2 {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  min-width:100%;
+  height:100%;
+}
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+}
 
 
 
@@ -248,7 +402,7 @@ input{
   
   background-color:rgb(248,239,234);
 }
-.foot a{
+a{
   text-decoration: none;
   color:black;
 }

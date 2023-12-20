@@ -84,16 +84,133 @@
       <button id="nextBtn" class="nav-btn" onclick="nextImage()">&#10095;</button>
     </div>
   </div>
-  <script src="./script.js"></script>
   
-
+  
+  <!--Phần dịch chuyển sang từng mục-->
   <div class="dichchuyen">
     <a href="#nam"><img src="./giaynam.png"></a>
     <a href="#nu"><img src="./giaynu.png" alt="Giày nữ" ></a>
     <a href="#betrai"><img src="./betari.png" alt="Bé trai" ></a>
     <a href="#begai"><img src="./begai.png" alt="Bé gái" ></a>
   </div>
-  <div></div>
+
+
+  <!--Phần sản phẩm nổi bật khi chiều rộng trên 410px-->
+  <div id="khungnoibat">
+    <button id="prevBtn" class="nav-btn" onclick="nutanhtruoc()">&#10094;</button>
+    <div id="khungchuanoibat">
+      <div class="noibat">
+        <img src="./Nam/Giay-the-thao/GTT001/tt1.webp">
+        <b><a href="./Nam/Giay-the-thao/GTT001/sanpham.html">Giày Thể Thao Nam GTT001</a></b>
+        3 size
+        <p> 2 màu sắc</p>
+        <p style="color:red"> 500.000 ₫ </p>
+      </div>
+      <div class="noibat">
+        <img src="./Nam/Giay-the-thao/GTT003/ttt1.webp">
+        <b><a href="./Nam/Giay-the-thao/GTT003/sanpham.html">Giày Thể Thao Nam GTT001</a></b>
+        3 size
+        <p> 2 màu sắc</p>
+        <p style="color:red"> 1.500.000 ₫ </p>
+      </div>
+      <div class="noibat">
+        <img src="./Nu/Giay-cao-got/A0036/1.webp">
+          <b><a href="./Nu/Giay-cao-got/A0036/sanpham.html">Giày thời trang nữ A0036</a></b>
+          4 size
+          <p> 1 màu sắc</p>
+          <p style="color:red"> 900.000 ₫ </p>
+      </div>
+      <div class="noibat">
+          <img src="./Nam/Sandal/SD001/giay1.webp">
+          <b><a href="./Nam/Sandal/SD001/sanpham.html">Giày sandal Nam SD001</a></b>
+          3 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 490.000 ₫ </p>
+      </div>
+      <div class="noibat">
+        <img src="./Nu/Giay-di-bo/E0038/13.webp">
+          <b><a href="./Nu/Giay-di-bo/E0038/sanpham.html">Giày chạy bộ nữ E0038</a></b>
+          3 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 490.000 ₫ </p>
+      </div>
+      <div class="noibat">
+        <img src="./Nu/Sandal/D0038/5.webp">
+          <b><a href="./Nu/Sandal/D0038/sanpham.html">Sandal Nữ Shoes World D0038</a></b>
+          3 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 490.000 ₫ </p>
+      </div>
+      <div class="noibat">
+        <img src="./Be-trai/Dep/C003/dep1.png">
+          <b><a href="./Be-trai/Dep/C003/sanpham.html">Dép Cho Bé Trai C003</a></b>
+          2 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 600.000 ₫ </p>
+      </div>
+    </div>
+    <button id="nextBtn" class="nav-btn" onclick="nutanhtiep()">&#10095;</button>
+  </div>
+
+
+
+  <!--Phần sản phẩm nổi bật khi chiều rộng dưới 410px-->
+  <div id="khungnoibat2">
+    <button id="prevBtn" class="nav-btn" onclick="nutanhtruoc2()">&#10094;</button>
+    <div id="khungchuanoibat2">
+      <div class="noibat2">
+        <img src="./Nam/Giay-the-thao/GTT001/tt1.webp">
+        <b><a href="./Nam/Giay-the-thao/GTT001/sanpham.html">Giày Thể Thao Nam GTT001</a></b>
+        3 size
+        <p> 2 màu sắc</p>
+        <p style="color:red"> 500.000 ₫ </p>
+      </div>
+      <div class="noibat2">
+        <img src="./Nam/Giay-the-thao/GTT003/ttt1.webp">
+        <b><a href="./Nam/Giay-the-thao/GTT003/sanpham.html">Giày Thể Thao Nam GTT001</a></b>
+        3 size
+        <p> 2 màu sắc</p>
+        <p style="color:red"> 1.500.000 ₫ </p>
+      </div>
+      <div class="noibat2">
+          <img src="./Nu/Giay-cao-got/A0036/1.webp">
+          <b><a href="./Nu/Giay-cao-got/A0036/sanpham.html">Giày thời trang nữ A0036</a></b>
+          4 size
+          <p> 1 màu sắc</p>
+          <p style="color:red"> 900.000 ₫ </p>
+      </div>
+      
+      <div class="noibat2">
+        <img src="./Nam/Sandal/SD001/giay1.webp">
+        <b><a href="./Nam/Sandal/SD001/sanpham.html">Giày sandal Nam SD001</a></b>
+        3 size
+        <p> 2 màu sắc</p>
+        <p style="color:red"> 490.000 ₫ </p>
+      </div>
+      <div class="noibat2">
+        <img src="./Nu/Giay-di-bo/E0038/13.webp">
+          <b><a href="./Nu/Giay-di-bo/E0038/sanpham.html">Giày chạy bộ nữ E0038</a></b>
+          3 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 490.000 ₫ </p>
+      </div>
+      <div class="noibat2">
+        <img src="./Nu/Sandal/D0038/5.webp">
+          <b><a href="./Nu/Sandal/D0038/sanpham.html">Sandal Nữ Shoes World D0038</a></b>
+          3 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 490.000 ₫ </p>
+      </div>
+      <div class="noibat2">
+        <img src="./Be-trai/Dep/C003/dep1.png">
+          <b><a href="./Be-trai/Dep/C003/sanpham.html">Dép Cho Bé Trai C003</a></b>
+          2 size
+          <p> 2 màu sắc</p>
+          <p style="color:red"> 600.000 ₫ </p>
+      </div>
+    </div>
+    <button id="nextBtn" class="nav-btn" onclick="nutanhtiep2()">&#10095;</button>
+  </div>
 
 
 
@@ -115,5 +232,6 @@
       <a href="./Lien-he/lien-he.html"><p>LIÊN HỆ</p></a>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
