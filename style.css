@@ -4,6 +4,7 @@ body{
   align-items: center;
   margin:0;
 }
+/*Phần định dạng menu*/
 #menu{
   width:100%;
   height:70px;
@@ -476,20 +477,13 @@ a{
     min-width:50px;
   }
 }
-
-
 @media screen and (max-width: 380px) {
-  
-  
-  
   .search{
     margin:0;
   }
-
 }
-
 @media screen and (max-width: 350px) {
-  #menu, .anh, .foot{
+  body,#menu, .anh, .foot{
     width:350px;
   }
   #khungnoibat, #khungnoibat2{

@@ -363,3 +363,25 @@ a{
     margin:70px 10px 0 10px  ;
   }
 }
+@media screen and (max-width: 480px){
+  .logo{
+    width:80px;
+    height:50px;
+  }
+  .icon-menu {
+    min-width:50px;
+  }
+  .icon{
+    margin:0 3px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .search{
+    margin:0;
+  }
+}
+@media screen and (max-width: 350px) {
+  body,#menu,.line, .foot, .tron{
+    width:350px;
+  }
+}
