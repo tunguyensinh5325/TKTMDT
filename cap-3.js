@@ -1,4 +1,3 @@
-
 function toggleMenu() {
     var menuContent = document.getElementById("menuContent");
     menuContent.classList.toggle("show");
@@ -29,4 +28,37 @@ function selectBox(selectedBox) {
     // Đặt thẻ div được chọn vào trạng thái đã chọn
     selectedBox.classList.add('selected');
 }
+
+let number = 1;
+function updateNumber(operation) {
+  if (operation === 'add') {
+    number += 1;
+  } else if (operation === 'subtract' && number > 1) {
+    number -= 1;
+  }
+
+  document.getElementById('number').innerText = number;
+}
+
+
+function showPopup() {
+  document.getElementById('infor-khachhang').style.display = 'flex';
+  setTimeout(function () {
+    document.getElementById('infor-khachhang').style.opacity = '1';
+  }, 10);
+}
+
+function closePopup() {
+  document.getElementById('infor-khachhang').style.opacity = '0';
+  setTimeout(function () {
+    document.getElementById('infor-khachhang').style.display = 'none';
+  }, 300);
+}
+var buyButtons = document.querySelectorAll('.mua-ngay');
+
+buyButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        alert('Đã đặt hàng thành công');
+    });
+});
     

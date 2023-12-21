@@ -4,11 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DBB011311</title>
-  <link rel="stylesheet" href="./sanpham.css">
+  <link rel="stylesheet" href="../../../cap-3.css">
 </head>
 <body>
+  <div id="infor-khachhang">
+    <section>
+        <div id="hhh"><img src="./logo.png"></div>
 
-  <script src="./sanpham.js"></script>
+
+        <div class="so-luong">
+            <p class="text">Số lượng: </p>
+            <div class="num">
+                <div class="num-left" onclick="updateNumber('subtract')">-</div>
+                <div class="num2" id="number">1</div>
+                <div class="num-right" onclick="updateNumber('add')">+</div>
+            </div>
+        </div>
+
+
+
+        <form action="#" method="post">
+            
+            <input type="text" id="name" required placeholder="Họ và Tên">
+            <fieldset>
+                
+                <input type="email" id="email" required placeholder="Email">
+
+                
+                <input type="text" class="sdt"  required placeholder="Số điện thoại">
+            </fieldset>
+
+            <label for="message">Nội dung dặn dò</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <div id="thanh-chon">
+                <button id="dong" onclick="closePopup()">Close</button>
+                <button type="submit" class="mua-ngay">Mua ngay</button>
+            </div>
+        </form>
+    </section>
+</div>
+  <script src="../../../cap-3.js"></script>
   <div id="menu">
 
     <!--LOGO-->
@@ -92,7 +127,7 @@
         <img src="https://product.hstatic.net/1000230642/product/giay-bup-be-be-gai-dbb011311hog-hong-7e7dj-color-hong_062d8e9e713d45b2931f4a867a41c332.jpg" class="thumbnail" onclick="showImage(this, 'https://product.hstatic.net/1000230642/product/giay-bup-be-be-gai-dbb011311hog-hong-7e7dj-color-hong_062d8e9e713d45b2931f4a867a41c332.jpg')" > 
        
       </div>
-      <button class="mua">Mua ngay</button>
+      <button class="mua" onclick="showPopup()">Mua ngay</button>
     </div>
   </div>
 
@@ -169,15 +204,7 @@
       <a href="../../../Lien-he/lien-he.html"><p>LIÊN HỆ</p></a>
     </div>
   </div>
-<script>
-  var buyButtons = document.querySelectorAll('.mua');
 
-buyButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        alert('Đã đặt hàng thành công');
-    });
-});
-</script>
 
 </body>
 </html>
