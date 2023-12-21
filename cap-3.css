@@ -334,6 +334,7 @@
     font-size: 20px;
     transition: border 0.1s, filter 0.1s;
     border: 1px solid white;
+    cursor: pointer;
   }
   .kt.selected {
     border: 1px solid black;
@@ -361,6 +362,7 @@
     align-items: center;
     font-size: 30px;
     border-radius: 10px;
+    cursor: pointer;
   }
   @media screen and (max-width:820px){
     .firstbox{
