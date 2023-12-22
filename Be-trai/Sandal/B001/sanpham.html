@@ -7,7 +7,43 @@
   <link rel="stylesheet" href="../../../cap-3.css">
 </head>
 <body>
+  <div id="infor-khachhang">
+    <section>
+        <div id="hhh"><img src="./logo.png"></div>
 
+
+        <div class="so-luong">
+            <p class="text">Số lượng: </p>
+            <div class="num">
+                <div class="num-left" onclick="updateNumber('subtract')">-</div>
+                <div class="num2" id="number">1</div>
+                <div class="num-right" onclick="updateNumber('add')">+</div>
+            </div>
+        </div>
+
+
+
+        <form action="#" method="post">
+            
+            <input type="text" id="name" required placeholder="Họ và Tên">
+            <fieldset>
+                
+                <input type="email" id="email" required placeholder="Email">
+
+                
+                <input type="text" class="sdt"  required placeholder="Số điện thoại">
+            </fieldset>
+            <input type="text" required placeholder="Địa chỉ">
+
+            <label for="message">Nội dung dặn dò</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <div id="thanh-chon">
+                <button id="dong" onclick="closePopup()">Close</button>
+                <button type="submit" class="mua-ngay">Mua ngay</button>
+            </div>
+        </form>
+    </section>
+  </div>
   <script src="../../../cap-3.js"></script>
   <div id="menu">
 
