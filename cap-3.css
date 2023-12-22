@@ -5,8 +5,8 @@
     align-items: center;
     padding-left:5%;
     margin-top:3px;
-  }
-  .num{
+}
+.num{
     width:100px;
     height:100%;
     display:flex;
@@ -16,8 +16,8 @@
     border-radius:5px;
     overflow:hidden;
     margin-left:5px;
-  }
-  .num-left, .num-right{
+}
+.num-left, .num-right{
     height:100%;
     width:33.33%;
     display:flex;
@@ -25,29 +25,30 @@
     align-items: center;
     border:solid 1px;
     cursor: pointer;
-  }
+}
   
   
   
   
-  #infor-khachhang{
-    background-color: rgba(0,0,0,0.5);
-    width:100%;
-    position:fixed;
-    height:100vh;
-    display:none;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-  }
-  section{
+#infor-khachhang{
+  background-color: rgba(0,0,0,0.5);
+  width:100%;
+  position:fixed;
+  height:100%;
+  display:none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  z-index: 100;
+}
+section{
     overflow:hidden;
     width:600px;
     height:80%;
     background-color: white;
     border-radius:10px;
-    
+    z-index: 100;
   }
   section img{
     width:200px;
