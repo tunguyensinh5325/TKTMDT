@@ -87,6 +87,9 @@ var bienhientai2 = 0;
       anhtruoc2();
     }
     choanh2(bienhientai2);
+    window.onload = function() {
+      alert("Sau khi điền đầy đủ thông tin nhận hàng thì bảng thông tin đó sẽ biến mất chứng minh cho việc đã đặt hàng thành công");
+    };
 
 
 
