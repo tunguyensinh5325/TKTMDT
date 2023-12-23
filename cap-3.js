@@ -55,9 +55,5 @@ function closePopup() {
 }
 var buyButtons = document.querySelectorAll('.mua-ngay');
 
-buyButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        alert('Đã đặt hàng thành công');
-    });
-});
+
     
