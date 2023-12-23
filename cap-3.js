@@ -5,7 +5,6 @@ function toggleMenu() {
 function showImage(thumbnail, imageSource) {
     var largeImage = document.getElementById('largeImage');
 
-    // Đặt tất cả các ảnh nhỏ về trạng thái ban đầu (không được chọn)
     var thumbnails = document.querySelectorAll('.thumbnail');
     thumbnails.forEach(function (thumb) {
         thumb.classList.remove('selected');
